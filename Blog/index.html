@@ -8,27 +8,34 @@
     <script src="https://kit.fontawesome.com/7d534dd6bd.js" crossorigin="anonymous"></script>
     <title>Personal Blog</title>
   </head>
+
   <body class="container">
-    <!-- Header Content-->
+
+    <!-- Header Section-->
     <header class="site-header">
-      <div class="wrapper">
-        <a href="#" class="logo">Logo</a>
-        <nav class="primary-nav">
-          <ul>
-            <li><a href="#home"></a>Home</li>
-            <li><a href="#blog"></a>Blog</li>
-            <li><a href="#about"></a>About</li>
-            <li><a href="#contact"></a>Contact</li>
-          </ul>
-        </nav>
-        <div class="hero-page">
-          <img src="" alt="hero page" />
-          <h1>Food of Southeast Asian</h1>
-        </div>
-      </div>
+      <input type="checkbox" class="menu-btn">
+      <div class="overlay"></div>
+      <nav class="main-nav-header">
+        <ul class="menu-list">
+          <li class="menu"><a class="menu-link href="#home">Home</a></li>
+          <li class="menu"><a class="menu-link href="#blog">Blog</a></li>
+          <li class="menu"><a class="menu-link href="#about">About</a></li>
+          <li class="menu"><a class="menu-link href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Logo & Header Content-->
+      <div class="header-logo">
+        <a href="#" class="logo">F<i class="fas fa-globe-asia globe-logo"></i>SA</a>
+        <h1 class="header-logo-name">Food in Southeast Asia</h1>
+
+        <!-- Content -->
+        <div class="header-logo-content">
+          <!-- <h1 class="header-content-title">Food in Southeast Asia</h1> -->
+        </div>    
     </header>
 
-    <!-- Main Content-->
+    <!-- Main Section-->
     <main class="main-site" id="blog">
       <div class="wrapper">
         <!-- Vietnam -->
@@ -186,14 +193,14 @@
       </div>
     </main>
 
-    <!-- Comments Form -->
+    <!-- Comment-Form-->
     <div id="comment-form">
         <form>
             <h1>Leave a Reply</h1>
             <p>Your email address will not be published. Fields with (*) are required.</p>
 
-            <fieldset>
-            <textarea name="message" cols="30" rows="10" placeholder="Comment"></textarea></fieldset>
+            <label for="message">Comment</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
 
             <label for="name">Name *</label>
             <input type="text" id="name" required!></input>
@@ -205,16 +212,14 @@
             <input type="url" id="webpage"></input>
             
             <label for="message"></label>
-
-
             <button type="submit">Post Comment</button>
         </form>
 
     </div>
-    <!-- Footer -->
+    <!-- Footer Section-->
     <footer id="footer">
-        <p>&copy 2022 Food of Souteast Asian. All Right Reserved.</p>
-        <p><em>Designed & written with &#9829 by Cielo Tennert</em></p>
+        <p>&copy 2022 Food of Souteast Asian. All rights reserved.</p>
+        <p><em>Designed with &#9829 by Cielo Tennert</em></p>
         <div class="social-link">
             <a href="#" class="instagram">
                 <i class="fab fa-instagram-square"></i>
@@ -230,5 +235,6 @@
             </a>
         </div>
     </footer>
+    <div class="overlay"></div>
   </body>
 </html>

@@ -1,0 +1,135 @@
+@import "reset";
+@import "utility";
+
+.container {
+  @include center;
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.site-header {
+  position: relative;
+  height: 100vh;
+  min-width: 100vw;
+  background-color: $color-secondary;
+  background-image: url("https://source.unsplash.com/sedJnjrUMM8");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.menu-btn {
+  position: fixed;
+  @include center;
+  -webkit-appearance: none;
+  outline: none;
+  background: $color-tertiary;
+  height: 3em;
+  width: 3em;
+  right: 3vw;
+  top: 1em;
+  font-size: 4em;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+
+  &::before {
+    position: absolute;
+    content: "☰";
+    color: $color-primary;
+    font-size: 1.5em;
+  }
+
+  &:checked::before {
+    content: "✖";
+    position: absolute;
+  }
+
+  &:checked ~ .main-nav-header {
+    visibility: visible;
+    z-index: 5;
+  }
+
+    &:checked ~ .overlay{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: $color-tertiary;
+      filter: opacity(0.3);
+    }
+}
+
+.main-nav-header {
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .menu-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .menu-link {
+    position: relative;
+    font-size: $font-size-title3;
+    color: $color-primary;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      padding: 0.8em 0.8em;
+      background: $color-tertiary;
+      color: $color-primary;
+      border-radius: 1em 0 1em 0;
+    }
+  }
+
+  .menu {
+    font-size: $font-size-title1;
+    color: $color-secondary;
+    padding: 2em 0;
+    z-index: 3;
+  }
+}
+
+.header-logo {
+  position: fixed;
+  width: 100%;
+  left: 3vw;
+  top: 5em;
+  // z-index: 5;
+}
+
+.header-logo-name {
+  position: absolute;
+  font-size: $font-size-title3;
+  color: $color-primary;
+}
+
+.logo {
+  font-family: $font-text;
+  font-size: 16em;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.globe-logo {
+  font-size: 1em;
+  color: $color-tertiary;
+  letter-spacing: 0.5vw;
+}
