@@ -1,21 +1,25 @@
-// @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
-
+// Colors
 $color-primary: #fff;
 $color-secondary: #033;
 $color-tertiary: #099;
-$color-text: #000;
-$font-size-link: 5em;
-$font-size-title1: calc(1em + 5vw);
-$font-size-title2: calc(1em + 3.5vw);
-$font-size-title3: calc(1em + 2.5vw);
-$font-size-para: calc(1em + 2vw);
-$font-text: Georgia, 'Times New Roman', Times, serif;
+
+// Font size & styles
+$font-size-link: calc(5em + 6vw);
+$font-size-title1: calc(5em + 6vw);
+$font-size-title2: calc(3em + 6vw);
+$font-size-title3: calc(3em + 4vw);
+$font-size-title3: calc(3em + 4vw);
+$font-size-para: calc(2em + 3vw);
+$font-style: Georgia, "Times New Roman", Times, serif;
+
+// Transition
 $transition: all 0.3s ease-in-out;
 
+// Mixin
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
