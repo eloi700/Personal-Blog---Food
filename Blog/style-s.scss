@@ -14,7 +14,7 @@
   height: 100vh;
   min-width: 100%;
   background-color: $color-secondary;
-  background-image: url("https://source.unsplash.com/sedJnjrUMM8");
+  background-image: url("/Blog/images/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -119,6 +119,7 @@
   .sub-content {
     font-size: $font-size-para;
     color: $color-primary;
+    line-height: 1.8rem;
     text-align: center;
     font-style: italic;
     padding: 0.5rem 1rem;
@@ -154,7 +155,7 @@
     border-left: 0.5em solid $color-tertiary;
     margin: 1.5em 1em;
     padding: 0.5em 10px;
-    font-size: $font-size-para;
+    font-size: $font-size-quote;
     color: #aaa;
     width: calc(100% - 2em);
 
@@ -169,7 +170,7 @@
   }
 }
 
-.article {
+.country-article {
   position: relative;
   @include center;
   width: 100%;
@@ -195,18 +196,17 @@
   border: none;
   border-radius: 0.8rem;
   box-shadow: 0 0 0.5rem #aaa;
-
 }
 
-.section {
+.dish-section {
   position: relative;
   @include center;
 }
 
 .intro{
-  // position: relative;
   text-align: center;
   font-size: $font-size-para;
+  line-height: 1.6rem;
   color: #aaa;
   padding: 2rem 1rem;
   
@@ -223,11 +223,13 @@
 .discover-more {
   position: relative;
   font-size: $font-size-para;
-  color: $color-secondary;
+  color: $color-primary;
   padding: 1rem 1.5em;
-  background: #ddd;
+  background: $color-tertiary;
   text-align: center;
   box-shadow: 0 0 0.2em #aaa;
+  border-bottom: 0.5rem solid $color-primary;
+  border-radius: 3rem 3rem 0  0;
   transition: $transition;
   transform: scale(1);
   cursor: pointer;
@@ -245,17 +247,14 @@
   position: relative;
   width: 100%;
   @include center;
-  border-top: 0.2rem solid $color-secondary;
+  background: $color-tertiary;
+  border-radius: 3rem 3rem 0 0;
   padding-top: 2rem;
 }
 
 .footer-para{
-  color: #aaa;
+  color: #ddd;
   font-size: $font-size-footer;
-}
-
-.designed{
-  font-size: $font-size-para;
 }
 
 .social-link{
