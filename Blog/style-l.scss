@@ -1,0 +1,86 @@
+@import "utility";
+
+@media screen and (min-width: 800px) {
+  .main-nav-header {
+    visibility: visible;
+    position: fixed;
+    background: $color-secondary;
+    bottom: unset;
+    height: 8.3rem;
+    align-items: flex-end;
+    filter: opacity(1);
+    z-index: 9;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: calc(1.55rem + 0.3vh) calc(3rem + 1vw);
+    pointer-events: initial;
+  }
+
+  .menu-link {
+    display: block;
+    color: $color-primary;
+    font-size: $font-size-para;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: none;
+    cursor: pointer;
+
+    &:hover {
+      translate: rotate(0) scale(1);
+      padding: 0.5rem 1rem;
+      border-top: 0.5rem solid $color-tertiary;
+      color: $color-tertiary;
+      border-radius: 0;
+      text-decoration: none;
+    }
+  }
+
+  .menu-btn {
+    visibility: hidden;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .header-logo {
+    position: fixed;
+    padding: 0 3rem 1rem 3rem;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 25%;
+  }
+
+  .country-article {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .country-name {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    font-size: $font-size-title3;
+  }
+
+  .discover-more {
+    grid-row: 3;
+    grid-column: 1 / 1;
+    align-self: center;
+  }
+
+  .dish-1 {
+    grid-row: 2 / span 2;
+  }
+
+  .img-container {
+    display: grid;
+    width: 100%;
+  }
+}
