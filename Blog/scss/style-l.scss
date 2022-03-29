@@ -58,29 +58,42 @@
   }
 
   .country-article {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
   }
 
   .country-name {
-    grid-row: 1;
-    grid-column: 1 / span 2;
+    grid-area: 1 / 1 / 2 / 3;
     font-size: $font-size-title3;
   }
 
-  .discover-more {
-    grid-row: 3;
-    grid-column: 1 / 1;
+  .intro {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 2rem;
     align-self: center;
   }
 
-  .dish-1 {
-    grid-row: 2 / span 2;
+  .discover-more {
+    grid-area: 3 / 1 / 4 / 2;
+    align-self: center;
   }
 
   .img-container {
     display: grid;
     width: 100%;
+  }
+
+  .dish-1 {
+    grid-area: 2 / 2 / 4 / 3;
+  }
+
+  .dish-2 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .dish-3 {
+    grid-area: 4 / 2 / 5 / 3;
   }
 }

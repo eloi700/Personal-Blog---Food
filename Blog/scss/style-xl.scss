@@ -1,43 +1,43 @@
-// @import "utility";
-
 @media screen and (min-width: 1150px) {
   .main-site {
     max-width: 1000px;
   }
 
-  .menu-link{
+  .menu-link {
     font-size: 2.5rem;
   }
 
-  .header-content{
+  .header-content {
     padding: 2rem;
     border-radius: 2rem;
   }
 
-  .header-content-title{
+  .header-content-title {
     font-size: 8rem;
   }
 
-  .sub-content{
+  .sub-content {
     font-size: 3rem;
     max-width: 1000px;
     line-height: 4rem;
     padding: 3rem;
   }
 
-  .intro{
-      font-size: 2.3rem;
-  }
-
-  .dish-name{
-      font-size: 2rem;
-  }
-
-  .quote{
+  .intro {
     font-size: 2.3rem;
   }
 
-  em, b, cite{
+  .dish-name {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 2.3rem;
+  }
+
+  em,
+  b,
+  cite {
     font-size: 2rem;
   }
 
@@ -76,13 +76,11 @@
     width: 100%;
   }
 
-  .footer-para{
+  .footer-para {
     font-size: 1.8rem;
   }
 
-  .social-link{
-      gap: 1.5rem;
+  .social-link {
+    gap: 1.5rem;
   }
 }
-
-
