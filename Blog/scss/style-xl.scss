@@ -1,5 +1,8 @@
 @media screen and (min-width: 1150px) {
-  .main-site {
+  .main-site,
+  .dishes,
+  .reply-form,
+  .author-info {
     max-width: 1000px;
   }
 
@@ -23,18 +26,12 @@
     padding: 3rem;
   }
 
-  .intro {
-    font-size: 2.3rem;
-  }
-
-  .dish-name {
-    font-size: 2rem;
-  }
-
+  .intro,
   .quote {
     font-size: 2.3rem;
   }
 
+  .dish-name,
   em,
   b,
   cite {
@@ -64,9 +61,11 @@
   .dish-1 {
     grid-area: 4 / 1 / 6 / 2;
   }
+
   .dish-2 {
     grid-area: 4 / 2 / 6 / 3;
   }
+
   .dish-3 {
     grid-area: 4 / 3 / 6 / 4;
   }
@@ -77,6 +76,83 @@
   }
 
   .footer-para {
+    font-size: 1.8rem;
+  }
+
+  // Page xl
+  .dishes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .img-container-page {
+    width: 80%;
+  }
+
+  .dish-name-page {
+    font-size: 2.3rem;
+    height: 6rem;
+  }
+
+  .country-food {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 5rem;
+  }
+
+  .img-1 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .para-page-1 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .img-2 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .para-page-2 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .img-3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .para-page-3 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .reply-form {
+    padding-top: 5rem;
+  }
+
+  .post-submit {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #000;
+  }
+
+  .author-title {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .author-para {
+    padding: 3rem 1rem;
+    font-size: 1.8rem;
+  }
+
+  .avatar-img {
+    width: 20%;
+    padding: 3rem 1rem;
+  }
+
+  .dish-para,
+  .comment-para,
+  .fill-name,
+  .footer-para-page {
     font-size: 1.8rem;
   }
 

@@ -43,7 +43,6 @@
 
   .menu-btn {
     visibility: hidden;
-    z-index: 0;
     user-select: none;
     pointer-events: none;
   }
@@ -55,6 +54,10 @@
     left: 0;
     top: 0;
     width: 25%;
+
+    &.header-logo-page {
+      width: 25%;
+    }
   }
 
   .country-article {
@@ -95,5 +98,34 @@
 
   .dish-3 {
     grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .dish-name-page {
+    font-size: $font-size-comment-para;
+    height: 5rem;
+  }
+
+  .dish-para,
+  b,
+  em,
+  .comment-para,
+  .author-para {
+    font-size: $font-size-comment-para;
+  }
+
+  .img-container-page {
+    width: 50%;
+  }
+
+  .comment-form-title {
+    font-size: 2.5rem;
+  }
+
+  .avatar-img {
+    width: 40%;
+  }
+
+  .author-title {
+    font-weight: 300;
   }
 }
