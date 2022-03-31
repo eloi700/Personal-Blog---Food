@@ -1,0 +1,5 @@
+@import url("style-s.css");
+@import url("style-m.css") screen and (min-width: 520px);
+@import url("style-l.css") screen and (min-width: 800px);
+@import url("style-xl.css") screen and (min-width: 1150px);
+/*# sourceMappingURL=main.css.map */
