@@ -1,0 +1,15 @@
+@media screen and (min-width: 520px) {
+  .img-container {
+    width: 60%;
+  }
+  .img-container-page {
+    width: 60%;
+  }
+  .dish-name,
+  .dish-name-page {
+    font-size: calc(2.5em + 2vw);
+  }
+  .avatar-img {
+    width: 60%;
+  }
+}/*# sourceMappingURL=style-m.css.map */

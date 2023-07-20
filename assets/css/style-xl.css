@@ -1,0 +1,129 @@
+@media screen and (min-width: 1150px) {
+  .main-site,
+  .dishes,
+  .reply-form,
+  .author-info {
+    max-width: 1000px;
+  }
+  .menu-link {
+    font-size: 2.5rem;
+  }
+  .header-content {
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .header-content-title {
+    font-size: 8rem;
+  }
+  .sub-content {
+    font-size: 3rem;
+    max-width: 1000px;
+    line-height: 4rem;
+    padding: 3rem;
+  }
+  .intro,
+  .quote {
+    font-size: 2.3rem;
+  }
+  .dish-name,
+  em,
+  b,
+  cite {
+    font-size: 2rem;
+  }
+  .country-article {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .country-name {
+    grid-area: 1/1/2/4;
+    font-size: 5rem;
+  }
+  .intro {
+    grid-area: 2/1/3/4;
+  }
+  .discover-more {
+    grid-area: 3/1/4/4;
+    font-size: 2.2rem;
+  }
+  .dish-1 {
+    grid-area: 4/1/6/2;
+  }
+  .dish-2 {
+    grid-area: 4/2/6/3;
+  }
+  .dish-3 {
+    grid-area: 4/3/6/4;
+  }
+  .img-container {
+    display: grid;
+    width: 100%;
+  }
+  .footer-para {
+    font-size: 1.8rem;
+  }
+  .dishes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .img-container-page {
+    width: 80%;
+  }
+  .dish-name-page {
+    font-size: 2.3rem;
+    height: 6rem;
+  }
+  .country-food {
+    grid-area: 1/1/2/3;
+    font-size: 5rem;
+  }
+  .img-1 {
+    grid-area: 2/1/3/2;
+  }
+  .para-page-1 {
+    grid-area: 2/2/3/3;
+  }
+  .img-2 {
+    grid-area: 3/1/4/2;
+  }
+  .para-page-2 {
+    grid-area: 3/2/4/3;
+  }
+  .img-3 {
+    grid-area: 4/1/5/2;
+  }
+  .para-page-3 {
+    grid-area: 4/2/5/3;
+  }
+  .reply-form {
+    padding-top: 5rem;
+  }
+  .post-submit {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #000;
+  }
+  .author-title {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .author-para {
+    padding: 3rem 1rem;
+    font-size: 1.8rem;
+  }
+  .avatar-img {
+    width: 20%;
+    padding: 3rem 1rem;
+  }
+  .dish-para,
+  .comment-para,
+  .fill-name,
+  .footer-para-page {
+    font-size: 1.8rem;
+  }
+  .social-link {
+    gap: 1.5rem;
+  }
+}/*# sourceMappingURL=style-xl.css.map */
